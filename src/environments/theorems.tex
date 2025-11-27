@@ -1,0 +1,13 @@
+% Theorem environments have to be declared after cleveref is loaded.
+% Otherwise, `\cref' cannot find how to refer to them.
+
+\declaretheorem[name=Theorem,numberwithin=section]{theorem}
+\declaretheorem[name=Proposition,sibling=theorem]{proposition}
+\declaretheorem[name=Lemma,sibling=theorem]{lemma}
+\declaretheorem[name=Corollary,sibling=theorem]{corollary}
+\declaretheorem[style=definition,name=Definition,sibling=theorem]{definition}
+\declaretheorem[style=definition,name=Assumption,sibling=theorem]{assumption}
+\declaretheorem[style=definition,name=Example,sibling=theorem]{example}
+\declaretheorem[style=definition,name=Example,numbered=no]{example*}
+\declaretheorem[style=remark,name=Remark,sibling=theorem]{remark}
+\declaretheorem[style=remark,name=Remark,numbered=no]{remark*}
